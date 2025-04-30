@@ -35,6 +35,7 @@ document.getElementById('searchButton').addEventListener('click', async () => {
             <p><strong>Data de Abertura:</strong> ${data.abertura}</p>
             <p><strong>Situação:</strong> ${data.situacao}</p>
             <p><strong>Sócios:</strong> ${sociosList}</p>
+            <p><strong>Porte:</strong> ${data.porte}</p>
             <p><strong>Atividade Principal:</strong> ${data.atividade_principal[0]?.text || 'N/A'}</p>
             <p><strong>Endereço:</strong> ${data.logradouro}, ${data.numero}, ${data.bairro}, ${data.municipio} - ${data.uf}</p>
             <p><strong>Telefone:</strong> ${data.telefone || 'N/A'}</p>
