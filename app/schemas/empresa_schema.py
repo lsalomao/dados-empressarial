@@ -12,7 +12,7 @@ class QSASchema(BaseModel):
 
 class SimplesSchema(BaseModel):
     optante: bool
-    data_opcao: str
+    data_opcao: Optional[str]
     data_exclusao: Optional[str]
     ultima_atualizacao: str
 

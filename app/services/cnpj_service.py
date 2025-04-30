@@ -12,6 +12,8 @@ def consulta_cnpj(cnpj: str) -> Optional[Empresa]:
         
         dados = response.json()
         
+        print(f"Dados recebidos: {dados}") 
+
         if dados.get("status") == "ERROR":
             print(f"Erro na API: {dados.get('message')}")
             return None
