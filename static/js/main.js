@@ -25,7 +25,7 @@ document.getElementById('searchButton').addEventListener('click', async () => {
 
         const data = await response.json();
         const sociosList = data.qsa.length > 0
-        ? data.qsa.map(socio => `${socio.nome} (${socio.qual})`).join(', ')
+        ? data.qsa.map(socio => `<li>${socio.nome} (${socio.qual})</li>`).join('')
         : 'Nenhum sócio registrado';
 
         resultDiv.classList.remove('hidden');
